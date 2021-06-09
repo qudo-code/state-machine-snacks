@@ -1,0 +1,14 @@
+{
+    "extends": ["stylelint-config-sass-guidelines", "stylelint-config-idiomatic-order"],
+    "plugins": [
+        "stylelint-declaration-use-variable",
+        "stylelint-scss"
+    ],
+    "rules": {
+        "shorthand-property-no-redundant-values" : true,
+        "color-no-hex": true,
+        "color-named": "never",
+        "order/properties-alphabetical-order": null,
+        "indentation": 4
+    }
+}
