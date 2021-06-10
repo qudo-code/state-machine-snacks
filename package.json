@@ -1,5 +1,5 @@
 {
-  "name": "site-to-snap",
+  "name": "state-machine-ui",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -8,15 +8,11 @@
     "autobuild": "rollup -c -w",
     "serve": "sirv build --dev",
     "dev": "npm run autobuild",
-    "package": "bestzip sitetosheet.zip build/*"
+    "docs:init": "docsify init ./docs",
+    "docs:serve": "docsify serve docs"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "deep-get-set": "^1.1.1",
-    "xstate": "^4.19.1",
-    "xstate-component-tree": "^3.3.1"
-  },
   "devDependencies": {
     "@babel/core": "^7.10.5",
     "@babel/plugin-transform-runtime": "^7.10.5",
@@ -29,7 +25,7 @@
     "@tivac/eslint-config": "^2.4.0",
     "autoprefixer": "^9.8.5",
     "babel-preset-env": "^1.7.0",
-    "bestzip": "^2.2.0",
+    "docsify": "^4.12.1",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-svelte3": "^2.7.3",
