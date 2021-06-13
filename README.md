@@ -88,7 +88,7 @@ In order to define which states are associated with which components, we can uti
 | `state`   | XState state object. | `Object` |
 | `props`   | Props to be passed to the component. If any of the object properties are functions, the functions will be handled similar to XState `assign`. Each function will be called with the latest context and last event. `(ctx, event) => propValue` | `Object` | 
 
-#### Examples 
+## Examples 
 Examples of state machine configs and their component tree outputs for each state.
 
 #### Single Component 
