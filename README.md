@@ -91,7 +91,7 @@ In order to define which states are associated with which components, we can uti
 ## Examples 
 Examples of state machine configs and their component tree outputs for each state.
 
-#### Single Component 
+### Single Component 
 ```javascript
 import { component } from "state-machine-ui";
 
@@ -152,7 +152,7 @@ export default {
 ]
 ```
 
-#### Nesting Components 
+### Nesting Components 
 This is how you could make something like a multi-tab view or nav bar.
 ```javascript
 import { component } from "state-machine-ui";
@@ -231,7 +231,7 @@ export default {
     }
 ]
 ```
-#### Parallel Components
+### Parallel Components
 Often times we need to render more than one component at once. To accommodate this, the component tree plugin plays very nicely with XState's concept of [parallel states](https://xstate.js.org/docs/guides/parallel.html#parallel-state-nodes).
 ```javascript
 import { component } from "state-machine-ui";
