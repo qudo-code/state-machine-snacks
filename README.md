@@ -14,7 +14,7 @@ Plugins add additional functionality to an XState service.
 | Logger    | Provide useful logging when developing with XState. | [Link](/docs/chapters/plugins/logger.md) |
 
 
-# [Components](#components)
+# Components
 Integrate JavaScript components into a state machine config. This plugin analyzes a state machine in order to build a tree of components to be rendered for the active state.
 
 
