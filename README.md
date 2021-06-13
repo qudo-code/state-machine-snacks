@@ -338,7 +338,7 @@ export default {
 ]
 ```
 
-## Reading Component Tree
+## Reading The Component Tree
 The component tree will be stored in the context of your state machine. We can access the value with a simple subscription.
 
 ### Svelte
@@ -371,4 +371,9 @@ To render the additional children, accept the `childrens` props and continue the
 export let components;
 </script>
 ```
+
+### Vue
+
+### React
+
 
