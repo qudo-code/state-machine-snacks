@@ -1,8 +1,8 @@
-# State Machine UI
+f# State Machine UI
 A framework agnostic toolkit and concept built on [XState](https://xstate.js.org/docs/about/concepts.html) that aims to increase state machine adoption in UI development.
 
 #### What Is XState?
-[XState](https://xstate.js.org/docs/about/concepts.html) is a library that allows us to create and interpret state machines in JavaScript. It is recommended you understand the basics of [XState](https://xstate.js.org/docs/about/concepts.html) before using State Machine UI. 
+XState is a library that allows us to create and interpret state machines in JavaScript. It is recommended you understand the basics of XState before using State Machine UI. 
 
 # Plugins
 Plugins add additional functionality to an XState service.
