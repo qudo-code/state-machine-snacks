@@ -16,6 +16,7 @@ Plugins add additional functionality to an XState service.
 
 # Components
 *Inspired by [XState Component Tree](https://github.com/tivac/xstate-component-tree)*
+
 Integrate JavaScript components into a state machine config. This plugin analyzes a state machine in order to build a tree of components to be rendered for the active state.
 
 
