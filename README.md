@@ -343,7 +343,7 @@ The component tree will be stored in the context of your state machine. We can a
 
 ### Svelte
 **App.svelte**
-```javascript
+```html
 {#each components as { component, children }}
     <svelte:component this={component} components={children} />
 {/each}
@@ -361,7 +361,8 @@ $: ({
 
 **example-child.svelte**
 To render the additional children, accept the `childrens` props and continue the pattern.
-```javascript
+
+```html
 {#each components as { component, children }}
     <svelte:component this={component} {children} />
 {/each}
