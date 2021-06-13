@@ -364,7 +364,7 @@ To render the additional children, accept the `childrens` props and continue the
 
 ```html
 {#each components as { component, children }}
-    <svelte:component this={component} {children} />
+    <svelte:component this={component} components={children} />
 {/each}
 
 <script>
