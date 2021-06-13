@@ -55,7 +55,7 @@ export default {
 
 This event is used to update the `components` context upon state changes.
 ```javascript
-import { assign } from "xstate;
+import { assign } from "xstate";
 
 export default {
     context : {
