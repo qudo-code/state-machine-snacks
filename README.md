@@ -7,11 +7,11 @@ XState is a library that allows us to create and interpret state machines in Jav
 # Plugins
 Plugins add additional functionality to an XState service.
 
-| Plugin Name      | Description | |
-| ----------- | ----------- | ----------- |
-| Components| Render components depending on the active state. | [Link](#components)
-| Router    | Bind browser URLs to specified states. | [Link](/docs/chapters/plugins/router.md) |
-| Logger    | Provide useful logging when developing with XState. | [Link](/docs/chapters/plugins/logger.md) |
+| Name        | Description                                         |                       |
+| ----------- | -----------                                         | -----------           |
+| Components  | Render components depending on the active state.    | [Link](#components)   |
+| Router      | Bind browser URLs to specified states.              | [Link](#router)       |
+| Logger      | Provide useful logging when developing with XState. | [Link](#logger)       |
 
 
 # Components
