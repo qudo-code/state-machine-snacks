@@ -1,4 +1,4 @@
-f# State Machine UI
+# State Machine UI
 A framework agnostic toolkit and concept built on [XState](https://xstate.js.org/docs/about/concepts.html) that aims to increase state machine adoption in UI development.
 
 #### What Is XState?
