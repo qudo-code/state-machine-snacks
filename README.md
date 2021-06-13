@@ -7,11 +7,11 @@ XState is a library that allows us to create and interpret state machines in Jav
 # Plugins
 Plugins add additional functionality to an XState service.
 
-| Name        | Description                                         |                       |
-| ----------- | -----------                                         | -----------           |
-| Components  | Render components depending on the active state.    | [Link](#components)   |
-| Router      | Bind browser URLs to specified states.              | [Link](#router)       |
-| Logger      | Provide useful logging when developing with XState. | [Link](#logger)       |
+| Name        | Description                                                  |                       |
+| ----------- | -----------                                                  | -----------           |
+| Components  | Conditionally render components as you enter/exit states.    | [Link](#components)   |
+| Router      | Bind browser URLs to specified states.                       | [Link](#router)       |
+| Logger      | Provide useful logging when developing with XState.          | [Link](#logger)       |
 
 
 # Components
@@ -126,13 +126,13 @@ export default {
 };
 ```
 
-**`hideAll`**
+**`hideAll`** ↴
 ```javascript
 [
    /* empty */
 ]
 ```
-**`componentStateOne`**
+**`componentStateOne`** ↴
 ```javascript
 [
     {   
@@ -141,7 +141,7 @@ export default {
     }
 ]
 ```
-**`someState.componentStateTwo`**
+**`someState.componentStateTwo`** ↴
 
 \* *Non-component states are skipped.*
 
@@ -337,3 +337,37 @@ export default {
     }
 ]
 ```
+
+## Reading Component Tree
+The component tree will be stored in the context of your state machine. We can access the value with a simple subscription.
+
+### Svelte
+**App.svelte**
+```javascript
+{#each components as { component, children }}
+    <svelte:component this={component} components={children} />
+{/each}
+
+<script>
+import service from "./service.js";
+
+// XState services similar in shape to Svelte stores.
+// This means we can subscribe to them with Svelte's `$`.
+$: ({
+    components
+} = $service.context);
+</script>
+```
+
+**example-child.svelte**
+To render the additional children, accept the `childrens` props and continue the pattern.
+```javascript
+{#each components as { component, children }}
+    <svelte:component this={component} {children} />
+{/each}
+
+<script>
+export let components;
+</script>
+```
+
