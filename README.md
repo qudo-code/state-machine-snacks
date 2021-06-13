@@ -21,7 +21,7 @@ Integrate JavaScript components into a state machine config. This plugin analyze
 
 
 ## Setup
-#### Add Plugin
+### Add Plugin
 ```javascript
 import { plugins } from "state-machine-ui";
 import { createMachine, interpret } from "xstate";
@@ -40,7 +40,7 @@ pluginComponentTree(service);
 service.start();
 ```
 
-#### Context
+### Context
 *Add the following context to your state machine.*
 
 This is where the plugin will store the generated component tree.
@@ -52,7 +52,7 @@ export default {
 };
 
 ```
-#### Events
+### Events
 *Add the following event(s) and actions to your state machine.*
 
 This event is used to update the `components` context upon state changes.
