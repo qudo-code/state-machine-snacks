@@ -1,4 +1,4 @@
-[⬅ Back](/)
+[⬅ Back](https://github.com/qudo-lucas/state-machine-ui)
 # Components Plugin
 *Inspired by [XState Component Tree](https://github.com/tivac/xstate-component-tree)*
 
