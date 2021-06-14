@@ -1,7 +1,8 @@
 [⬅ Back](https://github.com/qudo-lucas/state-machine-ui)
 # Plugin Development
-if you're going to use context tell the to scope it to their plugin name 
-
+* tell them if theyr'e going ot use context, they need to scope it. Any way to enforce that or do it automagically? 
+* same thing for events
+could provide helper function sfor plugin development like "addContext" or "addEvent" but that sounds dumb.
 Possible plugin schema:
 ```javascript
 const helper = () => {}
