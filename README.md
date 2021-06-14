@@ -5,7 +5,7 @@ A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) th
 XState is a library that allows us to create and interpret state machines in JavaScript. It is recommended you understand the basics of XState before using State Machine UI. 
 
 ## Getting Started
-State UI requires a machine config as an option and returns a XState service for use in your application. 
+State UI requires only a config as an option
 #### Options
 | Options     | Description  |              |
 | ----------- | -----------  | -----------  | 
@@ -70,8 +70,8 @@ service.start();
 #### Available Plugins
 | Name        | Description                                                  |                       |
 | ----------- | -----------                                                  | -----------           |
-| components  | Conditionally render components as you enter/exit states.    | [Link](#components)   |
-| router      | Bind browser URLs to specified states.                       | [Link](#router)       |
-| logger      | Provide useful logging when developing with XState.          | [Link](#logger)       |
+| components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
+| router      | Bind browser URLs to specified states.                       | [Link](/docs/plugins/router.md)       |
+| logger      | Provide useful logging when developing with XState.          | [Link](/docs/plugins/logger.md)       |
 
 
