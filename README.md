@@ -71,7 +71,7 @@ service.start();
 | Name        | Description                                                  |                       |
 | ----------- | -----------                                                  | -----------           |
 | components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
-| router      | Bind browser URLs to specified states.                       | [Link](/docs/plugins/router.md)       |
-| logger      | Provide useful logging when developing with XState.          | [Link](/docs/plugins/logger.md)       |
+| router      | Bind browser URLs to specified states.                       | [Link](https://github.com/qudo-lucas/state-machine-ui)       |
+| logger      | Provide useful logging when developing with XState.          | [Link](https://github.com/qudo-lucas/state-machine-ui)       |
 
 
