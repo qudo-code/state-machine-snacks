@@ -194,7 +194,7 @@ export default {
 ### Parallel Components
 Often times we need to render more than one component at once. To accommodate this, the component tree plugin plays very nicely with XState's concept of [parallel states](https://xstate.js.org/docs/guides/parallel.html#parallel-state-nodes).
 ```javascript
-import { component } from "state-ui/plugins/components;
+import { component } from "state-ui/plugins/components";
 
 import MainView from "./main-view.svelte";
 import Modal from "./modal.svelte";
