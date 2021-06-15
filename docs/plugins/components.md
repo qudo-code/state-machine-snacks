@@ -21,7 +21,6 @@ const {
 // Apply desired stateUI plugins and settings.
 stateUI({
     config,
-    service,
     plugins : [
         components({
             // Example
