@@ -75,12 +75,13 @@ service.start();
 ```
 
 #### All Plugins
-| Name        | Description                                                  |                       |
-| ----------- | -----------                                                  | -----------           |
-| components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
-| router      | Bind browser URLs to specified states.                       | [Link](/docs/plugins/router.md)       |
-| logger      | Provide useful logging when developing with XState.          | [Link](/docs/plugins/logger.md)       |
-
+| Name        | Description                                                  |                                       |
+| ----------- | -----------                                                  | -----------                           |
+| Components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
+| Router      | Bind browser URLs to specified states.                       | [Link](/docs/plugins/router.md)       |
+| Logger      | Provide useful logging when developing with XState.          | [Link](/docs/plugins/logger.md)       |
+| Ethereum    | Interact with the Ethereum blockchain.                       | *Coming soon*                         |
+| Solana      | Interact with the Solana blockchain.                         | *Coming soon*                         |
 
 
 ## 🛠 Contribute 
