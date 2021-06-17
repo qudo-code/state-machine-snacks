@@ -74,7 +74,7 @@ const service = stateUI({
 service.start();
 ```
 
-#### Available Plugins
+#### All Plugins
 | Name        | Description                                                  |                       |
 | ----------- | -----------                                                  | -----------           |
 | components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
