@@ -10,14 +10,10 @@ Integrate JavaScript components into a state machine config. This plugin analyze
 
 ## Add Plugin
 ```javascript
-import stateUI, { plugins } from "state-ui";
+import sms from "state-machine-snacks";
 import components from "state-machine-snacks/plugins/components;
 
 const config = { /* ...your machine config */ };
-
-const {
-    components,
-} = plugins;
 
 // Apply desired stateUI plugins and settings.
 stateUI({
