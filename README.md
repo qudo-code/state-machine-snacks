@@ -65,7 +65,7 @@ const service = sms({
     // Required
     config,
 
-    // Example:
+    // Example plugin usage:
     plugins : [
        components(),
        logger(),
