@@ -106,8 +106,8 @@ Interact with the Ethereum blockchain.
 
 Interact with the Solana blockchain.  
 
-# 🛠 Contribute 
+## 🛠 Contribute 
 [Plugin Development](/docs/plugin-development.md)
 
-# ✉️ Contact 
+## ✉️ Contact 
 [Twitter - @qudolucas](https://twitter.com/qudolucas)
