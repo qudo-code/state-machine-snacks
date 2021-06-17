@@ -20,7 +20,7 @@ import sms from "state-machine-snacks";
 
 const config = { /* ...machine config */ };
 
-// Create our service with 🍕
+// Create our service with 🍕.
 const service = sms({
     config,
 });
