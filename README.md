@@ -9,10 +9,10 @@ For basic usage, 🍕 requires only a XState state machine config as an option. 
 
 | Options     | Description  |              |
 | ----------- | -----------  | -----------  | 
-| config  | XState state machine config. | Required
-| createMachine | By default, the machine is created with `createMachine(config)`. You can overwrite this behavior with a function that will be passed the config and must return a XState machine instance. | Optional
-| interpret | By default, the service is interpreted via `interpret(machine)`. You can overwrite this behavior with a function that will be passed both the config and machine instance from the `createMachine()` step. | Optional
-| plugins | An array of plugins you want to add to the service. | Optional
+| `config`  | XState state machine config. | Required
+| `createMachine` | By default, the machine is created with `createMachine(config)`. You can overwrite this behavior with a function that will be passed the config and must return a XState machine instance. | Optional
+| `interpret` | By default, the service is interpreted via `interpret(machine)`. You can overwrite this behavior with a function that will be passed both the config and machine instance from the `createMachine()` step. | Optional
+| `plugins` | An array of plugins you want to add to the service. | Optional
 
 ##### 🍕 w/Default Settings
 ```javascript
