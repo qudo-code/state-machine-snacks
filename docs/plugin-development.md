@@ -1,38 +1,102 @@
 [⬅ Back](https://github.com/qudo-lucas/state-machine-ui)
 # Plugin Development
-if you're going to use context tell the to scope it to their plugin name 
 
-Possible plugin schema:
+### Dev Helpers 
+There are helper functions located in `./src/plugins/_util` that you should utilize throughout plugin development. 
+
+| Helper | Description | File |
+| ------  | ------ | ---- |
+| [Config Editor](#config-editor) | Useful during the `config` hook. |  `config-editor.js` |
+| [Extract Metadata From State Chart](#extract-metadata) | Generates a map of states that have matadata. | `extract-metadata.js` |
+
+## Config Editor
+`./src/plugins/util/config-editor.js`
+Append things like events, context, and states to a users config without affecting any original values. 
+
+**Note:** These helpers can only be used in the `config` hook during the plugin lifecycle.
+
 ```javascript
-const helper = () => {}
+import { assign } from "xstate";
+import configEditor from "../_util/config-editor.js";
 
-export default ({
-    config,
-}) => ({
+export default () => ({
+    config : (config) => ({
+        // Add context, a place where we can store values that the user can also read.
+        ...configEditor.addContext(config, { someContext : "some value" })
 
-    // Modify config
-    config : (config) => {
-        
-    },
+        // Add an update event used to update context.
+        ...configEditor.addEventListener(config, { plugin:myPluginName:UPDATE_STATE : {
+            actions : assign({
+                someContext : (ctx, event) => event.data,
+            })
+        }})
 
-    // Modify service
-    service : (service) => {
-       
-    }
+        // Add a new state.
+        ...configEditor.addState(config, {
+            coolState : {
+                entry : () => console.log("cool state bro)
+            },
+        })
 
-});
-
-// Export any utility functions as named exports.
-export {
-    helper,
-}
+        // Add event that moves the app to the new state we created.
+        ...configEditor.addEventListener(config, {
+            plugin:myPluginName:MOVE_STATE : ".coolState",
+        })
+    }),
+})
 ```
 
-Logic:
-1. read config
-2. pass config through the config step of each plugin.
-3. create the machine. Possibly with custom option.
-4. Interpret the machine. Possibly with custom option. 
-5. Pass service through the service step of each plugins
+### Adding Events
+ `configEditor.addEventListener(config, event)`
+You can add events to the users config during the `config` hook with the `addEventListener` function. 
 
-think about plugin runner in the pkg
+When adding event listeners, it is recommended that you prefix events with a pattern similar to the following example.
+
+**Example:** ```{ plugin:yourPluginName:WHATEVER_YOU_WANT : ".stateTwo" }```
+| Args     | Description  |              |
+| ----------- | -----------  | -----------  | 
+| config  | XState state machine config. | Required
+| event  | XState event object.  | Required
+
+### Adding Context
+ `configEditor.addContext(config, context)`
+You can add context to the users config during the `config` hook with the `addContext` function. 
+
+
+**Example:** ```{ myPluginsContext : "some values for my plugin or the user" }```
+| Args     | Description  |              |
+| ----------- | -----------  | -----------  | 
+| config  | XState state machine config. | Required
+| context  | Object to be appended to machine context.   | Required
+
+### Adding States
+ `configEditor.addState(config, context)`
+You can add states to the users config during the `config` hook with the `addState` function. 
+
+**Example:** ```{ myPluginsState : { entry : () => console.log("made it")}}```
+| Args     | Description  |              |
+| ----------- | -----------  | -----------  | 
+| config  | XState state machine config. | Required
+| state  | Object to be appended to machine states.   | Required
+
+<h2 id="extract-metadata">Extract Metadata</h2>
+`./src/plugins/util/extract-metadata.js`
+
+Extract metadata from a service. Often times plugins require user input provided via metadata in the state chart config. This function accepts a service, plus a list of  metadata keys you wish to extract.
+
+This would build a map of all state machine states that have metatadata property "component".
+```javascript
+const componentsMap = extractMetadataFromState(service, [ "component" ]);
+
+// Output:
+// Map([
+//      [
+//          "exampleState.anotherState",
+//          metadataValue
+//     ],
+//      [
+//          "someStateWithMeta",
+//          otherMetadataValue
+//     ]
+// ])
+```

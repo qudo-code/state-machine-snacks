@@ -1,6 +1,28 @@
 [⬅ Back](/)
-### Usage
+# Plugin Router
+Map states to URLs. 
 
+#### URL Params
+URL params will be stored in your state machine `context` under the `router.params` property.
+```javascript
+
+// Example router options.
+// router({
+//     "/#/home" : "stateA",
+// }),
+
+// URL: "/#/home?id=xxx-xx
+
+// state machine config
+states : {
+    stateA : {
+        entry : ({ router }) => console.log("URL PARAM ID", router.params.id) // xxx-xx
+    }
+}
+
+```
+
+#### Example
 ```javascript
 import stateUI, { plugins } from "state-ui";
 import { createMachine, interpret } from "xstate";

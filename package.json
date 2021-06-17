@@ -1,7 +1,7 @@
 {
-  "name": "state-machine-ui",
+  "name": "state-ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) that provides useful state machine plugins and patterns geared toward UI development.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "scripts": {
@@ -21,6 +21,18 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-svelte3": "^2.7.3",
     "rollup": "^2.22.1",
-    "rollup-plugin-terser": "^7.0.2"
-  }
+    "rollup-plugin-terser": "^7.0.2",
+    "xstate": "^4.20.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qudo-lucas/state-machine-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/qudo-lucas/state-machine-ui/issues"
+  },
+  "homepage": "https://github.com/qudo-lucas/state-machine-ui#readme"
 }

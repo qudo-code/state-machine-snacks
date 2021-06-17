@@ -1,3 +1,4 @@
+// Extract Metadata From Service
 // Provide a service and an array of keys as strings.
 // This function will loop over every state in your config and look for states that contain meta data that matches the keys provided.
 
@@ -5,7 +6,7 @@
 // const componentsMap = extractMetadataFromState(service, [ "component", "props" ]);
 
 // The above example would return a map of states that have meta data containing keys "component" or "props".
-const extractMetadataFromState = (service, metaKeys) => {
+export default (service, metaKeys) => {
     const { idMap : ids } = service.machine;
 
     const map = Object.entries(ids).reduce((acc, [ id, val ]) => {
@@ -23,8 +24,4 @@ const extractMetadataFromState = (service, metaKeys) => {
     }, new Map());
 
     return map;
-};
-
-export {
-    extractMetadataFromState,
 };
