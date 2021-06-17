@@ -80,6 +80,7 @@ You can add states to the users config during the `config` hook with the `addSta
 | state  | Object to be appended to machine states.   | Required
 
 <h2 id="extract-metadata">Extract Metadata</h2>
+
 `./src/plugins/util/extract-metadata.js`
 
 Extract metadata from a service. Often times plugins require user input provided via metadata in the state chart config. This function accepts a service, plus a list of  metadata keys you wish to extract.
