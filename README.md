@@ -4,7 +4,7 @@ A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) th
 ### What Is XState?
 XState is a library that allows us to create and interpret state machines in JavaScript. It is recommended you understand the basics of XState before using State Machine UI. 
 
-## Getting Started 👀
+## Getting Started 🚀
 For basic usage, State Machine Snacks requires only a XState state machine config as an option. SMS will utilize this config to create a machine and return an XState service.
 
 | Options     | Description  |              |
@@ -14,7 +14,7 @@ For basic usage, State Machine Snacks requires only a XState state machine confi
 | interpret | By default, the service is interpreted via `interpret(machine)`. You can overwrite this behavior with a function that will be passed both the config and machine instance from the `createMachine()` step. | Optional
 | plugins | An array of plugins you want to add to the service. | Optional
 
-##### Use w/Default Settings
+##### w/Default Settings
 ```javascript
 import sms from "state-machine-snacks";
 
@@ -28,7 +28,7 @@ const service = sms({
 service.start();
 ```
 
-#### Use w/Advanced Initialization
+#### w/Advanced Initialization
 ```javascript
 import stateUI from "state-ui";
 import components from "state-ui/plugins/components";
@@ -74,7 +74,7 @@ const service = stateUI({
 service.start();
 ```
 
-#### Available Plugins 
+#### Available Plugins 🧰
 | Name        | Description                                                  |                       |
 | ----------- | -----------                                                  | -----------           |
 | components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
@@ -83,7 +83,8 @@ service.start();
 
 
 
-### Contribute
-[🛠 Plugin Development](/docs/plugin-development.md)
+### Contribute 🛠
+- [Plugin Development](/docs/plugin-development.md)
 
-
+# Contact ✉️
+[Twitter - @qudolucas](https://twitter.com/qudolucas)
