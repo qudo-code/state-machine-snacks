@@ -85,21 +85,25 @@ Conditionally render components as you enter/exit states.
 ### 🔌 [Plugin Router](/docs/plugins/components.md)
 
 `state-machine-snacks/plugins/router.js`
+
 Bind browser URLs to specified states.
 
 ### 🔌 [Plugin Logger](/docs/plugins/logger.md)
 
 `state-machine-snacks/plugins/logger.js`
+
 Provide useful logging when developing with XState. 
 
 ### 🔌 Ethereum *[WIP]*
 
 `state-machine-snacks/plugins/ethereum.js`
+
 Interact with the Ethereum blockchain.
 
 ### 🔌 Solana *[WIP]*
 
 `state-machine-snacks/plugins/solana.js`
+
 Interact with the Solana blockchain.  
 
 # 🛠 Contribute 
