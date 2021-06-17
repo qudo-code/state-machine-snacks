@@ -5,7 +5,7 @@ A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) th
 XState is a library that allows us to create and interpret state machines in JavaScript. It is recommended you understand the basics of XState before using State Machine UI. 
 
 ## Getting Started
-For basic usage, State Machine Snacks requires only a config as an option. State Machine Snacks will proceed to create a machine from the provided config as well as interpret the machine and return the service.
+For basic usage, State Machine Snacks requires only a XState state machine config as an option. SMS will utilize this config to create a machine and return an XState service.
 
 | Options     | Description  |              |
 | ----------- | -----------  | -----------  | 
@@ -14,6 +14,8 @@ For basic usage, State Machine Snacks requires only a config as an option. State
 | interpret | By default, the service is interpreted via `interpret(machine)`. You can overwrite this behavior with a function that will be passed both the config and machine instance from the `createMachine()` step. | Optional
 | plugins | An array of plugins you want to add to the service. | Optional
 
+#### Examples
+##### Default settings
 ```javascript
 import stateUI from "state-ui";
 import components from "state-ui/plugins/components";
@@ -23,20 +25,29 @@ const config = { /* ...machine config */ };
 
 // Create our state machine with stateUI
 const service = stateUI({
-    // Required
+    config,
+});
+
+service.start();
+```
+
+#### Advanced Initialization
+```javascript
+import stateUI from "state-ui";
+import components from "state-ui/plugins/components";
+import logger from "state-ui/plugins/logger";
+
+const config = { /* ...machine config */ };
+
+// Create our state machine with stateUI
+const service = stateUI({
     config,
 
-    // Examples:
-    // createMachine : (config) => createMachine(config, { ...actions, ...services }),
+    createMachine : (config) => createMachine(config, { ...actions, ...services }),
 
-    // interpret : (config, machine) => interpret(machine).onTransition((state) => {
-    //     console.log(state.value);
-    // });
-
-    // plugins : [
-    //    components(),
-    //    logger(),
-    // ]
+    interpret : (config, machine) => interpret(machine).onTransition((state) => {
+         console.log(state.value);
+    });
 });
 
 service.start();
