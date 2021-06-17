@@ -51,7 +51,9 @@ service.start();
 ```
 
 ## 🔌 Plugins
-Plugins add additional functionality to an XState config and service. Plugins can also export helper functions useful during plugin usage and state machine composition. All plugins exist under `state-ui/plugins/[plugin name]`.
+Plugins add additional functionality to an XState config and service. Plugins can also export helper functions useful during plugin usage and state machine composition.
+
+Plugins exist under `state-ui/plugins/[plugin name]`.
 ```javascript
 import stateUI from "state-ui";
 import components from "state-ui/plugins/components";
@@ -74,7 +76,6 @@ const service = stateUI({
 service.start();
 ```
 
-#### All Plugins
 | Name        | Description                                                  |                                       |
 | ----------- | -----------                                                  | -----------                           |
 | 🔌 Components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
