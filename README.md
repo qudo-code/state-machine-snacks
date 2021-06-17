@@ -14,7 +14,7 @@ For basic usage, 🍕 requires only a XState state machine config as an option. 
 | interpret | By default, the service is interpreted via `interpret(machine)`. You can overwrite this behavior with a function that will be passed both the config and machine instance from the `createMachine()` step. | Optional
 | plugins | An array of plugins you want to add to the service. | Optional
 
-##### w/Default Settings
+##### 🍕 w/Default Settings
 ```javascript
 import sms from "state-machine-snacks";
 
@@ -28,7 +28,7 @@ const service = sms({
 service.start();
 ```
 
-#### w/Advanced Initialization
+#### 🍕 w/Advanced Initialization
 ```javascript
 import stateUI from "state-ui";
 import components from "state-ui/plugins/components";
