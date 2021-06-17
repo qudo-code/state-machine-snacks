@@ -94,13 +94,13 @@ Bind browser URLs to specified states.
 
 Provide useful logging when developing with XState. 
 
-### 🔌 Ethereum *[WIP]*
+### 🔌 Plugin Ethereum *[WIP]*
 
 `state-machine-snacks/plugins/ethereum.js`
 
 Interact with the Ethereum blockchain.
 
-### 🔌 Solana *[WIP]*
+### 🔌 Plugin Solana *[WIP]*
 
 `state-machine-snacks/plugins/solana.js`
 
