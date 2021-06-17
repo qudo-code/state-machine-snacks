@@ -76,6 +76,18 @@ const service = stateUI({
 service.start();
 ```
 
+#### 🔌 Components
+Conditionally render components as you enter/exit states.
+
+[📗 Usage Guide](/docs/plugins/components.md)
+
+#### 🔌 Router
+Conditionally render components as you enter/exit states.
+
+[📗 Usage Guide](/docs/plugins/components.md)
+
+
+
 | Name        | Description                                                  |                                       |
 | ----------- | -----------                                                  | -----------                           |
 | 🔌 Components  | Conditionally render components as you enter/exit states.    | [Link](/docs/plugins/components.md)   |
