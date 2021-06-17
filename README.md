@@ -1,4 +1,4 @@
-# State Machine Snacks 🍕 [WIP]
+# State Machine Snacks 🍕
 A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) that provides bite sized snacks for developing with state machine machines. This project aims to increase state machine adoption in modern day web apps by providing a suite of tools and plugins to inspire development and new ways of thinking.
 
 ### What Is XState?
