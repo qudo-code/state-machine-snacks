@@ -76,31 +76,31 @@ const service = stateUI({
 service.start();
 ```
 
-### 🔌 [Plugin Components](/docs/plugins/components.md)
+### 📦 [Plugin Components](/docs/plugins/components.md)
 
 `state-machine-snacks/plugins/components.js`
 Conditionally render components as you enter/exit states.
 
 
-### 🔌 [Plugin Router](/docs/plugins/components.md)
+### 📦 [Plugin Router](/docs/plugins/components.md)
 
 `state-machine-snacks/plugins/router.js`
 
 Bind browser URLs to specified states.
 
-### 🔌 [Plugin Logger](/docs/plugins/logger.md)
+### 📦 [Plugin Logger](/docs/plugins/logger.md)
 
 `state-machine-snacks/plugins/logger.js`
 
 Provide useful logging when developing with XState. 
 
-### 🔌 Plugin Ethereum *[WIP]*
+### 📦 Plugin Ethereum *[WIP]*
 
 `state-machine-snacks/plugins/ethereum.js`
 
 Interact with the Ethereum blockchain.
 
-### 🔌 Plugin Solana *[WIP]*
+### 📦 Plugin Solana *[WIP]*
 
 `state-machine-snacks/plugins/solana.js`
 
