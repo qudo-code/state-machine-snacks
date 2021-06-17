@@ -54,14 +54,14 @@ Plugins add additional functionality to an XState config and service. Plugins ca
 - Plugins can be passed an object containing options for the plugin. 
 
 ```javascript
-import stateUI from "state-ui";
-import components from "state-ui/plugins/components";
-import logger from "state-ui/plugins/logger";
+import sms from "state-machine-snacks";
+import components from "state-machine-snacks/plugins/components";
+import logger from "state-machine-snacks/plugins/logger";
 
 const config = { /* ...machine config */ };
 
 // Create our state machine with stateUI
-const service = stateUI({
+const service = sms({
     // Required
     config,
 
