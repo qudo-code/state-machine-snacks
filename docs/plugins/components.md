@@ -4,10 +4,6 @@
 
 Integrate JavaScript components into a state machine config. This plugin analyzes a state machine in order to build a tree of components to be rendered for the active state. This component tree is stored in your state machine `context` under the `components` property.
 
-| Options | Description
-| ----------- | -----------   
-| context     | Modify where the component tree is stored in context. Provide a string containing the new context property name.
-
 ## Add Plugin
 ```javascript
 import sms from "state-machine-snacks";
@@ -19,16 +15,18 @@ const config = { /* ...your machine config */ };
 stateUI({
     config,
     plugins : [
-        components({
-            // Example
-            // context : "componentTree",
-        })
+        components()
     ]
 });
 
 // Start service after
 service.start();
 ```
+
+| Options | Description
+| ----------- | -----------   
+| context     | Modify where the component tree is stored in context. Provide a string containing the new context property name.
+
 
 ## Usage
 Define component states in the state machine config. When a component state is entered, the corresponding component(s) (multiple if parallel state) will be included in the component tree.
