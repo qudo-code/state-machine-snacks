@@ -84,7 +84,7 @@ service.start();
 
 
 ## 🛠 Contribute 
-- [Plugin Development](/docs/plugin-development.md)
+[Plugin Development](/docs/plugin-development.md)
 
 ## ✉️ Contact 
 [Twitter - @qudolucas](https://twitter.com/qudolucas)
