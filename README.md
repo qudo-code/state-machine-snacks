@@ -10,7 +10,7 @@ State UI requires only a config as an option.
 | Options     | Description  |              |
 | ----------- | -----------  | -----------  | 
 | config  | XState state machine config. | Required
-| createMachine | By default, the machine is created with simply `createMachine(config)`. You can overwrite this behavior with a function that will be passed the config and must return a XState machine instance. | Optional
+| createMachine | By default, the machine is created with `createMachine(config)`. You can overwrite this behavior with a function that will be passed the config and must return a XState machine instance. | Optional
 | interpret | By default, the service is interpreted via `interpret(machine)`. You can overwrite this behavior with a function that will be passed both the config and machine instance from the `createMachine()` step. | Optional
 | plugins | An array of plugins you want to add to the service. | Optional
 
@@ -41,8 +41,6 @@ const service = stateUI({
 
 service.start();
 ```
-
-
 
 ## Plugins
 Plugins add additional functionality to an XState config and service. Plugins also usually export helper functions to assist when composing the state machine. All plugins exist under `state-ui/plugins/[plugin name]`.
