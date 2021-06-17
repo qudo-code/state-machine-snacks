@@ -292,7 +292,7 @@ export default {
 ```
 
 ## Reading The Component Tree
-The component tree will be stored in the context of your state machine. We can access the value with a simple subscription.
+The component tree will be stored in the context of your state machine. You can access the value with a simple subscription.
 
 ### Svelte
 **App.svelte**
