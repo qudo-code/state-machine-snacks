@@ -7,7 +7,7 @@ Integrate JavaScript components into a state machine config. This plugin analyze
 ## Add Plugin
 ```javascript
 import sms from "state-machine-snacks";
-import components from "state-machine-snacks/plugins/components;
+import components from "state-machine-snacks/plugins/components";
 
 const config = { /* ...your machine config */ };
 
