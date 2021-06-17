@@ -110,4 +110,4 @@ Interact with the Solana blockchain.
 [Plugin Development](/docs/plugin-development.md)
 
 ## ✉️ Contact
-[@ Me on Twitter](https://twitter.com/qudolucas)
+[@qudolucas](https://twitter.com/qudolucas)
