@@ -16,14 +16,12 @@ For basic usage, State Machine Snacks requires only a XState state machine confi
 
 ##### Use w/Default Settings
 ```javascript
-import stateUI from "state-ui";
-import components from "state-ui/plugins/components";
-import logger from "state-ui/plugins/logger";
+import sms from "state-machine-snacks";
 
 const config = { /* ...machine config */ };
 
 // Create our state machine with stateUI
-const service = stateUI({
+const service = sms({
     config,
 });
 
@@ -39,7 +37,7 @@ import logger from "state-ui/plugins/logger";
 const config = { /* ...machine config */ };
 
 // Create our state machine with stateUI
-const service = stateUI({
+const service = sms({
     config,
 
     createMachine : (config) => createMachine(config, { ...actions, ...services }),
