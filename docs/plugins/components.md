@@ -11,6 +11,7 @@ Integrate JavaScript components into a state machine config. This plugin analyze
 ## Add Plugin
 ```javascript
 import stateUI, { plugins } from "state-ui";
+import components from "state-machine-snacks/plugins/components;
 
 const config = { /* ...your machine config */ };
 
