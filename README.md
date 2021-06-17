@@ -51,7 +51,7 @@ service.start();
 ```
 
 ## 🔌 Plugins
-Plugins add additional functionality to an XState config and service. Plugins can also export helper functions useful during plugin usage and state machine composition.
+Plugins add additional functionality to an XState config and service. Plugins can also export helper functions to be used during plugin usage and state machine composition.
 
 Plugins exist under `state-machine-snacks/plugins/[plugin name]`.
 ```javascript
