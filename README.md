@@ -6,7 +6,7 @@ XState is a library that allows us to create and interpret state machines in Jav
 
 ## Getting Started
 State UI requires only a config as an option.
-#### Options
+
 | Options     | Description  |              |
 | ----------- | -----------  | -----------  | 
 | config  | XState state machine config. | Required
