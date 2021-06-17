@@ -20,7 +20,7 @@ import sms from "state-machine-snacks";
 
 const config = { /* ...machine config */ };
 
-// Create our state machine with stateUI
+// Create our service with 🍕
 const service = sms({
     config,
 });
@@ -36,7 +36,7 @@ import logger from "state-ui/plugins/logger";
 
 const config = { /* ...machine config */ };
 
-// Create our state machine with stateUI
+// Create our service with 🍕 + additional settings.
 const service = sms({
     config,
 
