@@ -79,6 +79,7 @@ service.start();
 ### 📦 [Plugin Components](/docs/plugins/components.md)
 
 `state-machine-snacks/plugins/components.js`
+
 Conditionally render components as you enter/exit states.
 
 
