@@ -96,20 +96,9 @@ Bind browser URLs to specified states.
 
 Provide useful logging when developing with XState. 
 
-### 📦 Plugin Ethereum *[WIP]*
-
-`state-machine-snacks/plugins/ethereum.js`
-
-Interact with the Ethereum blockchain.
-
-### 📦 Plugin Solana *[WIP]*
-
-`state-machine-snacks/plugins/solana.js`
-
-Interact with the Solana blockchain.  
-
 ## 🛠 Contribute 
 [Plugin Development](/docs/plugin-development.md)
+[Things I wans to make](/docs/todo.md)
 
 ## ✉️ Contact
 [@qudolucas](https://twitter.com/qudolucas)
