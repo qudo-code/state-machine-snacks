@@ -2,6 +2,6 @@ node_modules
 .vscode
 docs
 src
-.eslintrc.jd
+.eslintrc.js
 .gitignore
 rollup.config.js
