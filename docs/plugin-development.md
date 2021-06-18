@@ -1,6 +1,8 @@
 [⬅ Back](https://github.com/qudo-lucas/state-machine-ui)
 # Plugin Development
 
+[👨🏽‍💻 Plugin Developer Template](https://github.com/qudo-lucas/sms-template---plugin)
+
 ### Dev Helpers 
 There are helper functions located available via 🍕 that you should utilize throughout plugin development. 
 ```javascript
