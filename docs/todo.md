@@ -1,13 +1,12 @@
 # Todo
 
 ## Tasks 
-
+- [ ] Make this a project board.
 - [ ] Build mock project for dev env.
      - Maybe the dev environment can also just be the demo project? 
     - [ ] Test components plugin IRL.
     - [ ] Test this whole thing IRL.
     - [ ] Add dev documentation.
-   
 - [ ] Convert to TS.
 - [ ] Write tests.
 - [ ] Create at least one demo project before release (Simple UI).
