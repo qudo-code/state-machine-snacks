@@ -89,6 +89,10 @@ Bind browser URLs to specified states.
 
 Provide useful logging when developing with XState. 
 
+## 💻 Examples
+### ✨ [Simple UI](https://github.com/qudo-lucas/sms-template---simple-ui)
+Example of a simple UI utilizing [State Machine Snacks](https://github.com/qudo-lucas/state-machine-snacks) and [Plugin Components](https://github.com/qudo-lucas/sms-plugin---components). See how you can use a state machine to render components. 
+
 ## 🛠 Contribute 
 - [Plugin Development](/docs/plugin-development.md)
 - [Todo (Project Board)](https://github.com/qudo-lucas/state-machine-snacks/projects/1)
