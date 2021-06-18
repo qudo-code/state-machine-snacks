@@ -1,7 +1,13 @@
 /* eslint-disable max-statements */
 import { createMachine, interpret } from "xstate";
 
-const error = () => console.error(`state-ui-error: ${error}`);
+import util from "./util/index.js";
+
+const {
+    name : packageName,
+} = require("./package.json");
+
+const error = () => console.error(`${packageName}: ${error}`);
 
 export default ({
     config : existingConfig = false,
@@ -15,19 +21,19 @@ export default ({
         }
 
         // Pull off and sort plugin hooks
-        const configModifyers = [];
-        const serviceModifyers = [];
+        const configModifiers = [];
+        const serviceModifiers = [];
 
         plugins.forEach(({
             config : configMod = false,
             service : serviceMod = false,
         }) => {
             if(configMod) {
-                configModifyers.push(configMod);
+                configModifiers.push(configMod);
             }
 
             if(serviceMod) {
-                serviceModifyers.push(serviceMod);
+                serviceModifiers.push(serviceMod);
             }
         });
 
@@ -36,7 +42,7 @@ export default ({
         let service = false;
 
         // Modify config via "config" plugin hooks
-        configModifyers.forEach((configMod) => (config = configMod(config)));
+        configModifiers.forEach((configMod) => config = configMod(config));
 
         // Use custom machine creation if provided.
         if(customCreateMachine) {
@@ -54,10 +60,14 @@ export default ({
             service = interpret(machine);
         }
 
-        serviceModifyers.forEach((serviceMod) => serviceMod(config, service));
+        serviceModifiers.forEach((serviceMod) => serviceMod(config, service));
         
         return service;
     } catch(err) {
         error(err);
     }
+};
+
+export {
+    util,
 };

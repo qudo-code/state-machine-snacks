@@ -1,16 +1,16 @@
 {
-  "name": "state-ui",
+  "name": "state-machine-snacks",
   "version": "1.0.0",
-  "description": "A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) that provides useful state machine plugins and patterns geared toward UI development.",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
+  "description": "A framework built on XState that provides useful state machine plugins and patterns geared toward UI development.",
+  "main": "./dist/lib/index.js",
+  "module": "./dist/lib/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c",
     "autobuild": "rollup -c -w",
     "dev": "npm run autobuild"
   },
-  "author": "Lucas Hugdahl",
+  "author": "State Machine Snacks",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.10.5",
@@ -24,15 +24,12 @@
     "rollup-plugin-terser": "^7.0.2",
     "xstate": "^4.20.0"
   },
-  "directories": {
-    "doc": "docs"
-  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qudo-lucas/state-machine-ui.git"
+    "url": "git+https://github.com/qudo-lucas/state-machine-snacks.git"
   },
   "bugs": {
-    "url": "https://github.com/qudo-lucas/state-machine-ui/issues"
+    "url": "https://github.com/qudo-lucas/state-machine-snacks"
   },
-  "homepage": "https://github.com/qudo-lucas/state-machine-ui#readme"
+  "homepage": "https://github.com/qudo-lucas/state-machine-snacks"
 }

@@ -2,15 +2,22 @@
 # Plugin Development
 
 ### Dev Helpers 
-There are helper functions located in `./src/plugins/_util` that you should utilize throughout plugin development. 
+There are helper functions located available via 🍕 that you should utilize throughout plugin development. 
+```javascript
+import { util } from "state-machine-snacks";
 
-| Helper | Description | File |
+const {
+    configEditor,
+    extractMetadata,
+} = util;
+
+```
+| Helper | Description | Function |
 | ------  | ------ | ---- |
-| [Config Editor](#config-editor) | Useful during the `config` hook. |  `config-editor.js` |
-| [Extract Metadata From State Chart](#extract-metadata) | Generates a map of states that have matadata. | `extract-metadata.js` |
+| [Config Editor](#config-editor) | Useful during the `config` hook. |  `configEditor` |
+| [Extract Metadata From State Chart](#extract-metadata) | Generates a map of states that have matadata. | `extractMetadata` |
 
 ## Config Editor
-`./src/plugins/util/config-editor.js`
 Append things like events, context, and states to a users config without affecting any original values. 
 
 **Note:** These helpers can only be used in the `config` hook during the plugin lifecycle.
@@ -80,8 +87,6 @@ You can add states to the users config during the `config` hook with the `addSta
 | state  | Object to be appended to machine states.   | Required
 
 <h2 id="extract-metadata">Extract Metadata</h2>
-
-`./src/plugins/util/extract-metadata.js`
 
 Extract metadata from a service. Often times plugins require user input provided via metadata in the state chart config. This function accepts a service, plus a list of  metadata keys you wish to extract.
 
