@@ -9,6 +9,7 @@
     - [ ] Add dev documentation.
    
 - [ ] Convert to TS.
+- [ ] Write tests.
 - [ ] Create at least one demo project before release (Simple UI).
 
 ## Demo Project Ideas
