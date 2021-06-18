@@ -1,6 +1,8 @@
 # State Machine Snacks (🍕)
 A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) that provides bite sized snacks for developing with state machine machines. 🍕 aims to increase state machine adoption in modern day web apps by providing a suite of tools and plugins to inspire development and new ways of thinking.
 
+🐤 [@me](https://twitter.com/qudolucas) on Twitter.
+
 ### What Is XState?
 XState is a library that allows us to create and interpret state machines in JavaScript. It is recommended you understand the basics of XState before using State Machine UI. 
 
@@ -94,8 +96,13 @@ Provide useful logging when developing with XState.
 Example of a simple UI utilizing [State Machine Snacks](https://github.com/qudo-lucas/state-machine-snacks) and [Plugin Components](https://github.com/qudo-lucas/sms-plugin---components). See how you can use a state machine to render components. 
 
 ## 🛠 Contribute 
+#### Resources
 - [Plugin Development](/docs/plugin-development.md)
 - [Todo (Project Board)](https://github.com/qudo-lucas/state-machine-snacks/projects/1)
 
-## ✉️ Contact
-[@qudolucas](https://twitter.com/qudolucas)
+#### Links to Everything
+- [https://github.com/qudo-lucas/state-machine-snacks](https://github.com/qudo-lucas/state-machine-snacks)
+- [https://github.com/qudo-lucas/sms-plugin---logger](https://github.com/qudo-lucas/sms-plugin---logger)
+- [https://github.com/qudo-lucas/sms-plugin---components](https://github.com/qudo-lucas/sms-plugin---components)
+- [https://github.com/qudo-lucas/sms-template---simple-ui](https://github.com/qudo-lucas/sms-template---simple-ui)
+- [https://github.com/qudo-lucas/sms-template---plugin](https://github.com/qudo-lucas/sms-template---plugin)
