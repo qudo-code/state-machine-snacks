@@ -85,7 +85,7 @@ Conditionally render components as you enter/exit states.
 
 Bind browser URLs to specified states.
 
-### 📦 [Plugin Logger]([/docs/plugins/logger.md](https://github.com/qudo-lucas/sms-plugin---logger))
+### 📦 [Plugin Logger](https://github.com/qudo-lucas/sms-plugin---logger)
 
 Provide useful logging when developing with XState. 
 
