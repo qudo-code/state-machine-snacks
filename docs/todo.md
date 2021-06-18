@@ -1,7 +1,7 @@
 # Todo
 
 ## Tasks 
-- [ ] Developer router plugin.
+- [ ] Develop router plugin.
 - [ ] Convert to TS.
 - [ ] Create at least one demo project before release (Simple UI).
 
