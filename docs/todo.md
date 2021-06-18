@@ -27,3 +27,8 @@ Template for initiating peer to peer video calls via WebRTC + Firebase.
 
 #### WSIO P2P Chat
 Template for initiating peer to peer text chats. Firebase? 
+
+## Plugin Ideas
+
+### Cleaner State Manangement
+Make app state managment in context feel better.
