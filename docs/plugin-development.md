@@ -25,7 +25,11 @@ Append things like events, context, and states to a users config without affecti
 
 ```javascript
 import { assign } from "xstate";
-import configEditor from "../_util/config-editor.js";
+import { util } from "state-machine-snacks";
+
+const {
+    configEditor,
+} = util;
 
 export default () => ({
     config : (config) => ({
