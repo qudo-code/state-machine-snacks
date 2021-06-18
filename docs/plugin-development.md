@@ -31,30 +31,30 @@ const {
     configEditor,
 } = util;
 
-export default () => ({
-    config : (config) => ({
+export default () => {
+    config : (config) => {
+        let result = { ...config };
+        
         // Add context, a place where we can store values that the user can also read.
-        ...configEditor.addContext(config, { someContext : "some value" })
+        result = configEditor.addContext(result, { someContext : "some value" })
+    
 
         // Add an update event used to update context.
-        ...configEditor.addEventListener(config, { plugin:myPluginName:UPDATE_STATE : {
+        result = configEditor.addEventListener(result, { plugin:myPluginName:UPDATE_STATE : {
             actions : assign({
                 someContext : (ctx, event) => event.data,
             })
         }})
 
         // Add a new state.
-        ...configEditor.addState(config, {
+        result = configEditor.addState(result, {
             coolState : {
                 entry : () => console.log("cool state bro)
             },
         })
-
-        // Add event that moves the app to the new state we created.
-        ...configEditor.addEventListener(config, {
-            plugin:myPluginName:MOVE_STATE : ".coolState",
-        })
-    }),
+        
+        return result;
+    },
 })
 ```
 
