@@ -59,8 +59,8 @@ Plugins add additional functionality to an XState config and service. 🍕 provi
 
 ```javascript
 import sms from "state-machine-snacks";
-import components from "state-machine-snacks/plugins/components";
-import logger from "state-machine-snacks/plugins/logger";
+import components from "sms-plugin---components";
+import logger from "sms-plugin---logger";
 
 const config = { /* ...machine config */ };
 
