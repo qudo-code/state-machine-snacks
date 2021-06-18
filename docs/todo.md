@@ -1,6 +1,7 @@
 # Todo
+
 ## Simple UI
-A starter template for UI development. Should use the components plugin and the router.
+A starter template for UI development. Something like Uniswap. Should use the components plugin and the router.
 
 ## Ethereum Blockchain
 Template for interacting with the Ethereum blockchain.
