@@ -1,8 +1,10 @@
 # Todo
 
 ## Tasks 
-- [ ] Develop router plugin.
-- [ ] Test components plugin IRL.
+
+- [ ] Build mock project for dev env.   
+    - Test components plugin IRL.
+    - Test this whole thing IRL.
 - [ ] Convert to TS.
 - [ ] Create at least one demo project before release (Simple UI).
 
