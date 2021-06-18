@@ -98,7 +98,7 @@ Provide useful logging when developing with XState.
 
 ## 🛠 Contribute 
 - [Plugin Development](/docs/plugin-development.md)
-- [Things I wans to make](/docs/todo.md)
+- [Todo](/docs/todo.md)
 
 ## ✉️ Contact
 [@qudolucas](https://twitter.com/qudolucas)
