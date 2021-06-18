@@ -1,0 +1,7 @@
+node_modules
+.vscode
+docs
+src
+.eslintrc.jd
+.gitignore
+rollup.config.js
