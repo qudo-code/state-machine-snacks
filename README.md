@@ -81,9 +81,9 @@ service.start();
 
 Conditionally render components as you enter/exit states.
 
-### 📦 [Plugin Router](https://github.com/qudo-lucas/sms-plugin---router)
+<!-- ### 📦 [Plugin Router](https://github.com/qudo-lucas/sms-plugin---router)
 
-Bind browser URLs to specified states.
+Bind browser URLs to specified states. -->
 
 ### 📦 [Plugin Logger](https://github.com/qudo-lucas/sms-plugin---logger)
 
