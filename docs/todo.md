@@ -2,6 +2,7 @@
 
 ## Tasks 
 - [ ] Develop router plugin.
+- [ ] Test components plugin IRL.
 - [ ] Convert to TS.
 - [ ] Create at least one demo project before release (Simple UI).
 
