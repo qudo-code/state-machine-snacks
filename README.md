@@ -91,7 +91,7 @@ Provide useful logging when developing with XState.
 
 ## 🛠 Contribute 
 - [Plugin Development](/docs/plugin-development.md)
-- [Todo](/docs/todo.md)
+- [Todo (Project Board)]((https://github.com/qudo-lucas/state-machine-snacks/projects/1))
 
 ## ✉️ Contact
 [@qudolucas](https://twitter.com/qudolucas)

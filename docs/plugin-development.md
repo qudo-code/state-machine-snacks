@@ -12,7 +12,6 @@ const {
     configEditor,
     extractMetadata,
 } = util;
-
 ```
 | Helper | Description | Function |
 | ------  | ------ | ---- |
