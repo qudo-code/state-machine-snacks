@@ -1,4 +1,4 @@
-[⬅ Back](https://github.com/qudo-lucas/state-machine-ui)
+[⬅ Back to 🍕](https://github.com/qudo-lucas/state-machine-snacks)
 # Plugin Development
 
 [👨🏽‍💻 Plugin Developer Template](https://github.com/qudo-lucas/sms-template---plugin)
