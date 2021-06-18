@@ -11,5 +11,5 @@ Template for interacting with the Solana blockchain.
 ## Video Call
 Template for initiating peer to peer video calls via WebRTC + Firebase. 
 
-##WSIO P2P Chat
+## WSIO P2P Chat
 Template for initiating peer to peer text chats. Firebase? 
