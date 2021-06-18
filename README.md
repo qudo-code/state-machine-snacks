@@ -77,15 +77,15 @@ const service = sms({
 service.start();
 ```
 
-### 📦 [Plugin Components](https://github.com/qudo-lucas/sms-plugin-components)
+### 📦 [Plugin Components](https://github.com/qudo-lucas/sms-plugin---components)
 
 Conditionally render components as you enter/exit states.
 
-### 📦 [Plugin Router](https://github.com/qudo-lucas/sms-plugin-router)
+### 📦 [Plugin Router](https://github.com/qudo-lucas/sms-plugin---router)
 
 Bind browser URLs to specified states.
 
-### 📦 [Plugin Logger]([/docs/plugins/logger.md](https://github.com/qudo-lucas/sms-plugin-logger))
+### 📦 [Plugin Logger]([/docs/plugins/logger.md](https://github.com/qudo-lucas/sms-plugin---logger))
 
 Provide useful logging when developing with XState. 
 
