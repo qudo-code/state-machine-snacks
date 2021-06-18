@@ -2,9 +2,12 @@
 
 ## Tasks 
 
-- [ ] Build mock project for dev env.   
+- [ ] Build mock project for dev env.
+     - Maybe the dev environment can also just be the demo project? 
     - [ ] Test components plugin IRL.
-    - Test this whole thing IRL.
+    - [ ] Test this whole thing IRL.
+    - [ ] Add dev documentation.
+   
 - [ ] Convert to TS.
 - [ ] Create at least one demo project before release (Simple UI).
 
