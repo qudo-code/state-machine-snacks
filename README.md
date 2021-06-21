@@ -54,7 +54,7 @@ service.start();
 Plugins add additional functionality to an XState config and service. 🍕 provides a plugin runner and you can add plugins to your state machine by simply adding them to the `plugins : []` option when initializing your service.
 
 - Plugins can export helper functions to be used during plugin usage and state machine composition.
-- Plugins exist under `state-machine-snacks/plugins/[plugin name]`.
+- Plugins are located in their own repositories prefixed with `sms-plugin---`. You can find a list of currently available plugins below.
 - Plugins can be passed an object containing options for the plugin. 
 
 ```javascript
@@ -90,6 +90,22 @@ Bind browser URLs to specified states. -->
 ### 📦 [Plugin Logger](https://github.com/qudo-lucas/sms-plugin---logger)
 
 Provide useful logging when developing with XState. 
+
+#### WIPs (Future Plugin Ideas)
+**Plugin Router**
+Map browser urls to specific states.
+
+**Ethereum Blockchain**
+Plugin for interacting with the Ethereum blockchain.
+
+**Solana Blockchain**
+Plugin for interacting with the Ethereum blockchain.
+
+**Video Call**
+Plugin for initiating peer to peer video calls via WebRTC + Firebase. 
+
+**WSIO P2P Chat**
+Plugin for initiating peer to peer text chats. Firebase? 
 
 ## 💻 Examples
 ### ✨ [Simple UI](https://github.com/qudo-lucas/sms-template---simple-ui)
