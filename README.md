@@ -92,7 +92,7 @@ Bind browser URLs to specified states. -->
 Provide useful logging when developing with XState. 
 
 ### [WIP] Plugin Router
-Map browser urls to specific states.
+Map browser URLs to specific states.
 
 ### [WIP] Ethereum Blockchain
 Plugin for interacting with the Ethereum blockchain.
