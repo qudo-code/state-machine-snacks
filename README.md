@@ -91,20 +91,19 @@ Bind browser URLs to specified states. -->
 
 Provide useful logging when developing with XState. 
 
-#### WIPs (Future Plugin Ideas)
-**Plugin Router**
+#### Plugin Router [WIP]
 Map browser urls to specific states.
 
-**Ethereum Blockchain**
+#### Ethereum Blockchain [WIP]
 Plugin for interacting with the Ethereum blockchain.
 
-**Solana Blockchain**
+#### Solana Blockchain [WIP]
 Plugin for interacting with the Ethereum blockchain.
 
-**Video Call**
+#### Video Call [WIP]
 Plugin for initiating peer to peer video calls via WebRTC + Firebase. 
 
-**WSIO P2P Chat**
+#### WSIO P2P Chat [WIP]
 Plugin for initiating peer to peer text chats. Firebase? 
 
 ## 💻 Examples
