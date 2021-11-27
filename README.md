@@ -1,4 +1,4 @@
-⚠️ While I personally use this tool everyday, this repository is currently more of a working POC and isn't actively maintained. Feel free to experiment with the tool and I would love to hear your feedback. 
+⚠️ I developed this project as a POC for personal use.
 
 # State Machine Snacks (🍕)
 A framework built on [XState](https://xstate.js.org/docs/about/concepts.html) that provides bite sized snacks for developing with state machine machines. 🍕 aims to increase state machine adoption in modern day web apps by providing a suite of tools and plugins to inspire development and new ways of thinking.
