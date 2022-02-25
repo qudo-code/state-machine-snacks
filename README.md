@@ -96,18 +96,6 @@ Provide useful logging when developing with XState.
 ### [WIP] Plugin Router
 Map browser URLs to specific states.
 
-### [WIP] Ethereum Blockchain
-Plugin for interacting with the Ethereum blockchain.
-
-### [WIP] Solana Blockchain
-Plugin for interacting with the Ethereum blockchain.
-
-### [WIP] Video Call
-Plugin for initiating peer to peer video calls via WebRTC + Firebase. 
-
-### [WIP] WSIO P2P Chat
-Plugin for initiating peer to peer text chats. Firebase? 
-
 ## 💻 Examples
 ### ✨ [Simple UI](https://github.com/qudo-lucas/sms-template---simple-ui)
 Example of a simple UI utilizing [State Machine Snacks](https://github.com/qudo-lucas/state-machine-snacks) and [Plugin Components](https://github.com/qudo-lucas/sms-plugin---components). See how you can use a state machine to render components. 
